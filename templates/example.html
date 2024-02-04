@@ -1,0 +1,215 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo Bomnito</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img class="logo" src="https://assets.stickpng.com/images/587e31f49686194a55adab6e.png" alt="Logo">
+                </div>
+                <div class="nav-menu">
+                    <a class="nav-item" href="#inicio">Inicio</a>
+                    <a class="nav-item" href="#nosotros">Nosotros</a>
+                    <a class="nav-item" href="#servicios">Servicios</a>
+                </div>
+            </div>
+        </nav>
+        <div class="initial-container" id="inicio">
+            <h1 class="ini-title">
+                Bienvenida a la pagina de Inicio
+            </h1>
+            <p class="ini-text">
+                Hola mi amor esta es una pagina de ejemplo para mostrarte como se hacen proyectos en html, css y js
+            </p>
+        </div>
+        <div class="about" id="nosotros">
+            <div class="about-container">
+                <h1 class="about-title">
+                    Nosotros
+                </h1>
+                <p class="about-text">
+                    Nosotros somos una pareja bominta y femliz que esta aprendiendo a hacer paginas web :D
+                </p>
+            </div>
+            <div class="about-image">
+                <img class="about-img" src="https://i.pinimg.com/236x/70/52/79/705279b1b790aa6381c250fed135b448.jpg" alt="Nosotros">
+            </div>
+        </div>
+        <div class="services" id="servicios">
+            <div class="form-container">
+                <h1 class="service-title">Solicitud de besitos: </h1>
+                <form class="service-form">
+                    <input class="name-input" type="text" placeholder="Ingresa tu nombre (aka: Cecicienta)" id="nombre">
+                    <input class="cuantity-input" type="number" placeholder="Cantidad de besitos" id="cantidad">
+                    <input class="date-input" type="date" placeholder="Fecha de entrega" id="fecha">
+                    <select class="type-input" id="lugar">
+                        <option value="">Selecciona un lugar</option>
+                        <option value="casa">Casa</option>
+                        <option value="cita">Cita</option>
+                    </select>
+                    <button class="submit-button" onclick="solicitar()">Solicitar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">
+                Este es el pie de pagina de la pagina de ejemplo. :D
+            </p>
+        </div>
+    </footer>
+</html>
+
+<style>
+    .navbar {
+        display: flex;
+        background-color: #101E26;
+        color: #FFFAF1;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        position: sticky;
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+
+            .nav-logo {
+                .logo {
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+
+            .nav-menu {
+                padding: 30px;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                a{
+                    text-decoration: none;
+                    color: #FFFAF1;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .initial-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F2D1B3;
+        height: 100%;
+        width: 100%;
+
+        .ini-title {
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .ini-text {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #A69B8D;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+
+        .about-container {
+            margin: 15px;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+
+            .about-title {
+                font-size: 50px;
+            }
+
+            .about-text {
+                font-size: 20px;
+            }
+        }
+
+        .about-image {
+            .about-img {
+                width: 400px;
+                height: 300px;
+                padding: 50px;
+            }
+        }
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2D1B3;
+        height: 100%;
+        width: 100%;
+
+        .form-container {
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+
+            .service-title {
+                font-size: 50px;
+            }
+
+            .service-form {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                .name-input, .cuantity-input, .date-input, .type-input {
+                    margin: 10px;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+
+                .submit-button {
+                    margin: 10px;
+                    padding: 10px;
+                    font-size: 20px;
+                    background-color: #101E26;
+                    color: #FFFAF1;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #101E26;
+        color: #FFFAF1;
+        width: 100%;
+
+        .footer-container {
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+</style>
+
+<script>
+
+</script>
