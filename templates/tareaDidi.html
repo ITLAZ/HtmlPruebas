@@ -1,0 +1,303 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tarea Didi</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #354748;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            background-color: #354748;
+        }
+
+        .cardA-container {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fefefe;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+
+            .image-containerA {
+                img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 25px;
+                }
+            }
+
+            .progress-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .percent {
+                    font-size: 40px;
+                    margin-bottom: 1px;
+                    font-weight: 600;
+                    color: #6e1ab8;
+                }
+
+                .content-uploaded {
+                    font-size: 16px;
+                    color: #ababad;
+                }
+            }
+
+            .files-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+
+                .files-uploaded {
+                    font-size: 16px;
+                    margin-bottom: 1px;
+                    margin-top: 1px;
+                }
+            }
+
+            .buttons-containerA {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+
+                .btn {
+                    background-color: #7411e6;
+                    color: #fefefe;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 15px;
+                    padding: 10px 20px;
+                    margin-right: 10px;
+                    border: none;
+                }
+            }
+        }
+
+        .cardB-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .image-containerB {
+                img {
+                    margin-top: 20px;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+            }
+
+            .contents {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: "Roboto Slab", sans-serif;
+                    color: #444d54;
+                }
+
+                .description {
+                    font-size: 16px;
+                    text-align: center;
+                    font-family: "Poppins", sans-serif;
+                    text-wrap: wrap;
+                    color: #9ca1a4;
+                }
+            }
+
+            .buttons-containerB {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 60px;
+                margin-bottom: 20px;
+
+                .btn {
+                    background-color: #f3b23e;
+                    color: #fefefe;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    width: 200px;
+                    border: none;
+                }
+
+                .slider-dots {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+
+                .dot {
+                    height: 6px;
+                    width: 6px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin: 0 2px;
+                }
+
+            }
+        }
+
+        .cardC-container {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+
+            .image-containerC {
+                padding: 20px;
+
+                img {
+                    margin-top: 20px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .contents {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #4D4D4D;
+                }
+
+                .description {
+                    font-size: 16px;
+                    text-align: center;
+                    text-wrap: wrap;
+                    color: #9C9C9C;
+                }
+            }
+
+            .buttons-containerC {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                width: 100%;
+                height: 100%;
+                margin-bottom: 0;
+
+                .btn {
+                    background-color: #F066A1;
+                    color: #fefefe;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 10px;
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cardA-container">
+            <div class="image-containerA">
+                <img src="data:image/jpeg;base64,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"
+                    alt="imgA" />
+            </div>
+            <div class="progress-container">
+                <h2 class="percent">69%</h2>
+                <span class="content-uploaded">45GB of 66 GB UPLOADED</span>
+            </div>
+            <div class="files-container">
+                <p class="files-uploaded">game_settings.cfg</p>
+                <p class="files-uploaded">savegame_slot_3.sav</p>
+                <p class="files-uploaded">level_mapdata.bin</p>
+            </div>
+            <div class="buttons-containerA">
+                <button class="btn">CANCEL</button>
+            </div>
+        </div>
+        <div class="cardB-container">
+            <div class="image-containerB">
+                <img src="https://img.freepik.com/free-vector/flat-design-muted-colors-illustration_23-2150076183.jpg?size=338&ext=jpg&ga=GA1.1.34264412.1708560000&semt=sph"
+                    alt="nature" />
+            </div>
+            <div class="contents">
+                <h3 class="title">Beautiful Nature</h3>
+                <span class="description">Nature, in the broadest sense, is the natural, physical, or
+                    material world or universe. The study of nature is a large part of
+                    science.</span>
+            </div>
+            <div class="buttons-containerB">
+                <button class="btn">Know More</button>
+                <div class="slider-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="cardC-container">
+            <div class="image-containerC">
+                <img src="https://static-00.iconduck.com/assets.00/money-pig-icon-2048x1696-byidrojg.png"
+                    alt="savings" />
+            </div>
+            <div class="contents">
+                <h3 class="title">SAVINGS ACCOUNT</h3>
+                <span class="description">Brilliant to keep your money locked away, let the interest build
+                    up, finally get to go on that holiday of your dreams!</span>
+            </div>
+            <div class="buttons-containerC">
+                <button class="btn">Start today!</button>
+            </div>
+        </div>
+</body>
+
+</html>
